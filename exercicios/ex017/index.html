@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelos de Caixa</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(4, 45, 122);
+                margin: 0;
+            }
+
+            h1 {
+                margin:auto;
+                text-align: center;
+                padding: 3px;
+                color: white;
+                text-shadow: 2px 2px 3px rgb(11, 0, 49);
+                background-color: rgb(38, 89, 255);
+                border: 15px groove blue;
+                box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.459);
+            }
+
+            nav {
+                background-color: rgb(2, 138, 138);
+                padding: 3px;
+                margin: 10px 0px 0px 0px;
+                text-align: center;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+                border-radius: 0px 0px 20px 20px;
+                border-top: 2px  solid rgb(1, 110, 129);
+            }
+
+            nav > a {
+                color: rgb(2, 0, 94);
+                text-decoration: none;
+                margin-right: 30px;
+                font-weight: bold;
+            }
+
+            nav > a:hover {
+                text-decoration: underline;
+            }
+
+            header {
+                background-color: rgb(0, 168, 168);
+                padding: 10px;
+            }
+
+            main {
+                background-color: white;
+                padding: 10px;
+                margin: 10px 50px;
+                border-radius: 15px;
+                box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.425);
+            }
+           
+            article {
+                background-color: rgb(108, 114, 114);
+                box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.425);
+                border-radius: 0px 15px;
+                text-align: justify;
+                padding: 0px 5px;
+
+            }
+
+            section {
+                background-color: rgb(115, 117, 119);
+                border-radius: 0px 20px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+                
+            }
+             
+            section > aside {
+                background-color: darkgray;
+            }
+            
+            
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+
+            footer > p {
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            
+            <h1>Exemplo de caixa box-level</h1>
+            <nav>
+                <a href="#">Contato</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Dúvidas</a>
+                <a href="#">Localização</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <article>
+                    <h2>artigos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut dignissimos ex alias officia, facilis aliquam nihil delectus, modi nisi placeat cum repellendus saepe suscipit ipsa quae perferendis veritatis. Amet.</p>
+                </article>
+            </section>
+            <section id="noticias">
+                <h2>Noticias sobre o mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui architecto commodi incidunt voluptas adipisci suscipit ut, labore numquam placeat obcaecati optio vel? Nostrum, vero ea fuga dolorum sapiente expedita. Aliquid!</p>
+                <aside>
+                    <p>Artigo Escrito por tanana</p>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por: RibahDEV
+            </p>
+        </footer>
+    </body>
+</html>

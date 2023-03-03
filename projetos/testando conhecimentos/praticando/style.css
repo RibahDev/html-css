@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    display: flex;
+    padding: 10px 0px 0px 5px;
+    margin: auto;
+    background-color: rgb(163, 2, 2);
+    border-radius: 10px;
+    
+}
+
+ul {
+    display: inline;
+    padding: 0;
+    width: 270px;
+}
+
+li {
+    font-weight: bold;
+    display: inline;
+    padding: 5px;
+    align-items: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a:active {
+    color: rgb(160, 0, 0);
+}
+
+nav img{
+    height: 10px;
+    margin: auto;
+    
+}
+
+#button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: black;
+}
+
+#pesquisa {
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: black;
+}
