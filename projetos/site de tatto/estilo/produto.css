@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-gap: 30px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    font-size: 3em;
+    text-decoration: none;
+    line-height: 1em; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(150, 7, 138, 0.5);
+}
+
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+.sobre {
+    background: #680056;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre img {
+    max-width: 80px;
+    display: flex;
+}
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+    ackground: #ffffff;
+}
+
+.caixa {
+    position: relative;
+    width: 1334px;
+    height: 400px;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font: bold 2em'century gothic';
+    text-transform: uppercase;
+}
+
+.caixa:before, .caixa:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 15px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, #49003b, #750275, #c5049b, #df3cc9, #7c01c4, #be00e4, rgb(75, 4, 71),
+    #ff00c8, #570057, #b95fa6, #df3cc9, #a200ff, #4b0239, rgb(75, 4, 71));
+    background-size: 1000%;
+    background-position: 300%;
+    border-radius: 5px;
+    animation: AnimarBorda 25s linear alternate infinite;
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+.caixa::after{
+    filter: blur(50px);
+}
+
+footer h2{
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    width: 1250px;
+   font-family: special Elite;
+    color: white;
+   font-size: 20px;  
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criando tabela</title>
+    </head>
+    <body>
+        <table width="300"
+         height="25%" border="4" cellspacing="10" cellpadding="7">
+         <tr bgcolor="#E0F8E0">
+            <td align="center" valign="center" height="40" colspan="2"><font face= "Comic Sans MS"><b>CADASTRO de CLIENTES</b></td>
+         </tr>
+            <tr bgcolor="E0EEEE">
+                <td><font face="Calibri"><b>Nome</b></td>
+                <td><font face="Calibri"><b>Sobrenome</b></td>
+            </tr>
+            <tr>
+                <td><font face="Calibri">Anna</font></td>
+                <td><font face="Calibri">Santos</font></td>
+            </tr>
+            <tr>
+                <td><font face="Calibri">João</font></td>
+                <td><font face="Calibri">Ribeiro</font></td>
+            </tr>
+        </table>
+
+        <form action="jojo@email.com" method="get">
+            <p><font face= "Calibri">Nome:
+                <input type="text" name="Nome" size="25" maxlength="50"></p>
+                <p>Número Do Cartão de Crédoto:<input type ="number" name="nun_cartao" size="16"> 
+                </font>
+                <p>Senha:<input type="password" name="senha" size="6"></p>
+            </p>
+            <p>Selecione a Bandeira do Seu Cartão: <br>
+                <input type="radio" name="vi" checked>VISA<br>
+                <input type="radio" name="selecao-cartao">MASTERCARD
+            </p>
+            <p>Escolha o horário para Entrega:<br>
+                <input type="checkbox" name="horario1" size="1">08h às 12h<br>
+                <input type="checkbox" name="horario2" size="1">13h às 15h<br>
+                <input type="checkbox" name="horario3" size="1">16h às 18h<br>
+            </p>
+            <p>Endereço:<input type="text" name="end" size="30"></p>
+            <p>Referência:<textarea name="ref" rows="2" cols="40"></textarea></p>
+            <input type="submit"
+            value=" Enviar "><input type="reset"
+            value=" Limpar "><input type="hidden" name="cpf" value="verdadeiro">
+            <h4>Escolha uma tranpostadora:</h4>
+            <select name="transportadora">
+                    <option>Log
+                    <option>Xpress
+                    <option>Sedex
+                    <option>Pac
+
+            </select>
+        </form>
+        
+    </body>
+</html>

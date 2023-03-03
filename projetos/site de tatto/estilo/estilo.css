@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Special+Elite&display=swap');
+
+
+
+
+/* barra do topo */
+.home {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+}
+
+.home a img {
+    max-width: 80px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat( 3, 1fr);
+    margin: 0 auto;
+    grid-gap: 80px;
+}
+
+.grid div p {
+    text-shadow:   3px #080006;
+    text-align: center;
+    font-size:x-large;
+    font-family:special Elite;
+    color: #0e000a;
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
+
+
+
+/* barra de pesquisa */
+.search {
+    display:flex;
+    align-items:flex-end;
+    height: 90px;
+    width: 100%, 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    width: 950px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 950px;
+    padding: 10px;
+    border: 2px solid rgb(146, 141, 141);
+    border-right: none;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+button[type="submit"] {
+    width: 15%;
+    padding: 8px; 
+    background-color: #380331;
+    color: rgb(255, 255, 255);
+    font-family: new Rocker;
+    border: 2px solid #6d0053;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+/* produtos do topo */
+ul, li {
+    margin: 0;
+    left: 0%;
+    transition: left 0,4s;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: new Rocker;
+}
+
+li:hover {
+    margin: 0;
+    padding: 0px;
+    background:fixed #410038a9;
+    font-family:special Elite, Arial, Helvetica;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    left: 100%;
+    transition: 0,5;
+    text-decoration: underline #ffffff;
+}
+
+
+
+
+
+/* tattoo.ink */
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 2%;
+    font-family: new Rocker;
+}
+
+.brand {
+    text-shadow: 0 0 2px #db75c5, 0 0 5px #e699d2;
+    text-decoration: underline overline rgb(24, 0, 21);
+    color:rgb(31, 0, 31)
+}
+
+
+
+
+
+/* Imagem do topo */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+nav .box-img {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img {
+    border: 3px solid #000000;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+}
+
+.fpn, .pvc {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+.box-img:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom,rgb(0,0,0,0)45%,#000 100%);
+
+}
+
+span {
+    padding: 40px;
+    background-color: #701364;
+    color: rgb(0, 0, 0);
+    font-family:special Elite, Arial, Helvetica;
+    font-size: 25px;
+    display: inline-block;
+    border-end-end-radius:  15px;
+    border: 3px solid #460938;
+
+}
+
+.pvc {
+    left: 100%;
+    transition:left 1s;
+}
+
+.box-img:hover .pvc {
+    left: 0%;
+}
+
+
+
+
+
+/* background */
+:root {
+    --gray: rgb(253, 234, 247);
+}
+
+.header {
+    width: 1000px;
+    top: 1000px;
+    height: 1200px;
+    background: var(--gray);
+    border-bottom-style:solid ;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home a img {
+    border-radius: 100%;
+    margin-left: 8%;
+    max-width: 80px;
+    display: flex;
+    transition: all 0.5%;
+}
+
+.home a img:hover {
+    border-radius: 0%;
+    transition: all 0.5%;
+
+}
+
+.home p {
+    margin-left: 2%;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+
+
+
+/* flash tattos */
+h1 {
+    border-radius: 15px;
+    background-color: #74106b;
+    margin: 120px;
+    text-shadow: 0 0 3px #ff00ea, 0 0 5px #81088b;
+    text-align: center;
+    text-decoration: underline;
+    font-family: new Rocker;
+}
+
+
+
+
+
+/* img em geral */
+img {
+    filter: blur(0.65px);
+    border: 3px solid #000000;
+    border: 0 0 2px solid #880068;
+    border-radius: 100%;
+    transition: all 0.90s;
+}
+
+img:hover {
+    filter: blur(0);
+    border: 24px solid #74556d;
+    border: 2px solid #850266;
+    border-radius: 0%;
+    transition: all 0.5;
+
+}
+
+
+
+
+
+    /* efeito Parallax */
+article {
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+article h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    color: #5f0353;
+}
+
+.wrapper {
+    border-radius: 8px;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    top: 800px;
+
+}
+
+section.container {
+    width: 100%;
+    max-width: 764px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module-content p {
+    margin-bottom: 40px ;
+}
+
+section.module-content :last-child {
+    margin-bottom: 0;
+}
+
+section.module.parallax h2 {
+    margin-bottom: 120px;
+    font-size: 50px;
+}
+
+/* para alterar tamanho do BkGd/parallax */
+section.module-content {
+    padding: 0px;
+    background: rgb(22, 22, 22);
+    border-radius: 1px;
+    height: 60vh;
+    display: flex;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh !important;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border: 8px solid #000000;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom,rgb(0,0,0,0)45%,#000 100%);
+}
+
+section.module.parallax.parallax-1 {
+    background-image:url(..//imagens/estudio.jpeg);
+}
+
+section.module.parallax.parallax-2 {
+    background-image: url(..//imagens/tintas.jpeg.jpg);
+}
+
+section.module.parallax h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family: new Rocker;
+    text-shadow: 0 0 3px #fcfcfc, 0 0 5px #ffffff;
+}
+
+
+
+
+/* footer */
+
+
+               /* INDEX */
