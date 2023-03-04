@@ -231,6 +231,7 @@ button,button::after {
   transition: all 1s;
   border: 3px ridge #91499b;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+  
 
 }
 
@@ -260,59 +261,5 @@ main {
 }
 
 /* Fototeta*/
-.box-img {
-  left: 345px;
-  width: 250px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
-}
 
-.box-img {
-  border: 3px solid #640d60;
-  position: relative;
-  overflow: hidden;
-  border-bottom-left-radius:  20px;
-  border-bottom-right-radius:  20px;
-}
-
-.fpn, .pvc {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-}
-.box-img:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 8;
-
-}
-
-span {
-  padding: 4px;
-  background-color: #530548a9;
-  color: rgb(255, 255, 255);
-  font-family:special Elite, Arial, Helvetica;
-  font-size: 10px;
-  display: inline-block;
-  border-end-end-radius:  15px;
-  border: 3px solid #490f44fa;
-  
-
-}
-
-
-.pvc {
-  left: 100%;
-  transition:left 1s;
-}
-
-.box-img:hover .pvc {
-  left: 0%;
-}
   
