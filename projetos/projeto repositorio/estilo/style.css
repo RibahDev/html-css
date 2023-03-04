@@ -219,8 +219,13 @@ button,button::after {
   margin:  auto;
 }
 
-.perfil img {
-  margin-right:50px ;
+.bloco-perf {
+  display: block;
+  text-align: center;
+}
+
+#perf {
+  margin: auto;
   height: 150px;
   border-radius: 50%;
   transition: all 1s;
@@ -229,17 +234,13 @@ button,button::after {
 
 }
 
-.perfil img:hover {
+#perf:hover {
   height: 200px;
   transition: all 0.7s;
   border-radius: 30%;
   border: 5px ridge #363fbf;
-  
 }
 
-aside {
-  display: flex;
-}
 
 main > article p {
     margin: 5px;
