@@ -30,7 +30,7 @@ header {
     text-align: center;
     font-size: 20px;
     color: var(--color4);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.397);
 }
 
 /* Barra Nav */
@@ -39,7 +39,8 @@ nav {
     margin: auto;
     background-color: #58005885;
     text-align: center;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+    border-radius: 15px 15px 0px 0px ;
+    box-shadow: inset 2px -5px 9px 3px rgb(0 0 0 / 36%);
 }
 
 
@@ -50,6 +51,7 @@ button,button::after {
     border: none;
     border-radius: 5px;
     color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     background-color: transparent;
     position: relative;
   }
@@ -197,31 +199,18 @@ button,button::after {
     }
   }
 
-
-#pe{
-  margin: 0;
-  text-align: center;
-}
-
-#nick {
-  margin: 0;
-  width: 150px;
-  
-}
-
-.fototeta  {
-  width: 70%;
-  height: 100%;
-}
-
-.fototeta img {
-  display: block;
-  margin:  auto;
+  main {
+    height: 50vh;
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #000000;
 }
 
 .bloco-perf {
-  display: block;
+  color: white;
   text-align: center;
+  text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
 }
 
 #perf {
@@ -229,37 +218,89 @@ button,button::after {
   height: 150px;
   border-radius: 50%;
   transition: all 1s;
-  border: 3px ridge #91499b;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
-  
-
+  border: 3px ridge #91499be1;
 }
 
 #perf:hover {
   height: 200px;
   transition: all 0.7s;
   border-radius: 30%;
-  border: 5px ridge #363fbf;
+  border: 5px ridge #363fbfea;
+}
+
+#in {
+  padding: 0;
+  height: 48px;
+  margin: 0;
+  transition: all 0.5s;
+  opacity: 70%;
+}
+
+#in:hover {
+    height: 60px;
+    transition: all 0.3s;
+    opacity: 100%;
+}
+
+#git {
+  margin: 0;
+  height: 42px;
+  padding-bottom: 7px;
+  transition: all 0.5s;
+  opacity: 70%;
+}
+
+#git:hover {
+    height: 55px;
+    transition: all 0.3s;
+    opacity: 100%;
+
+}
+
+section h1{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+section > .img1 {
+  background-color: black;
+}
+
+section > #img {
+  background: black url(../fotos/dev12.jpg) center center no-repeat fixed;
+  height: 90vh; 
+  background-size: cover;
+  box-shadow: inset 10px 10px 15px 5px black;
+}
+
+#conteudo1 {
+  background-color: black;
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  left: 15%;
+  top: 90%;
+  color: white;
+  text-align: center;
+}
+
+#conteudo2 {
+  background-color: black;
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  left: 60%;
+  top: 90%;
+  color: white;
+  text-align: center;
 }
 
 
-main > article p {
-    margin: 5px;
-    font-weight: bold;
-}
+
+
+
 
 footer {
   background-color: gray;
 }
-
-
-main {
-    margin: auto;
-    padding-left: 20px;
-    padding-top: 10px;
-    background-color: #ffffff;
-}
-
-/* Fototeta*/
-
-  
