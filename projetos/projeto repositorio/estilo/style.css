@@ -208,54 +208,84 @@ button,button::after {
 }
 
 .bloco-perf {
-  color: white;
+  margin: 5px;
   text-align: center;
+  color: white;
+  text-align: ;
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
 }
 
 #perf {
+  position: absolute;
+  height: 50%;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, 0%);
   margin: auto;
   height: 150px;
   border-radius: 50%;
   transition: all 1s;
-  border: 3px ridge #91499be1;
+  border: 3px ridge #ffffffe1;
+  opacity: 70%;
 }
 
 #perf:hover {
-  height: 200px;
+  height: 165px;
+  top: 31%;
+  left: 51%;
   transition: all 0.7s;
-  border-radius: 30%;
-  border: 5px ridge #363fbfea;
+  border-radius: 50%;
+  border: 5px solid #ffffffea;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.37);
+  opacity: 100%;
+
 }
 
-#in {
+#linkedin {
+  position: absolute;
+  left: 45%;
+  top: 56%;
+  margin: 10px;
   padding: 0;
-  height: 48px;
-  margin: 0;
   transition: all 0.5s;
-  opacity: 70%;
+  opacity: 50%;
+  border-radius: 20%;
+  box-sizing: border-box;
 }
 
-#in:hover {
-    height: 60px;
-    transition: all 0.3s;
-    opacity: 100%;
+#linkedin:hover {
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.603);
+  top: 55%;
+  left: 44.7%;
+  transition: all 0.4s;
+  box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
+  opacity: 100%;
 }
 
-#git {
-  margin: 0;
-  height: 42px;
-  padding-bottom: 7px;
+#github {
+  position: absolute;
+  height: 33px;
+  left: 52%;
+  top: 56%;
+  margin: 8px;
+  padding: 0;
   transition: all 0.5s;
-  opacity: 70%;
+  opacity: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
-#git:hover {
-    height: 55px;
-    transition: all 0.3s;
-    opacity: 100%;
-
+#github:hover {
+  height: 35px;
+  top: 55%;
+  border: 2px solid rgba(255, 255, 255, 0.603);
+  transition: all 0.4s;
+  box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
+  opacity: 100%;
 }
+
+
 
 section h1{
     text-align: center;
@@ -295,11 +325,6 @@ section > #img {
   color: white;
   text-align: center;
 }
-
-
-
-
-
 
 footer {
   background-color: gray;
