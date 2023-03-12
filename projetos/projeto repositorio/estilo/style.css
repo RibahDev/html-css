@@ -200,6 +200,7 @@ button,button::after {
   }
 
   main {
+    position: relative;
     height: 50vh;
     margin: auto;
     padding-left: 20px;
@@ -207,12 +208,16 @@ button,button::after {
     background-color: #000000;
 }
 
-.bloco-perf {
-  margin: 5px;
+h2 {
   text-align: center;
   color: white;
-  text-align: ;
+  text-align: center;
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
+}
+
+.bloco-perf {
+  display: flex;
+  align-items: center;
 }
 
 #perf {
@@ -220,7 +225,7 @@ button,button::after {
   height: 50%;
   left: 50%;
   top: 33%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -30%);
   margin: auto;
   height: 150px;
   border-radius: 50%;
@@ -242,9 +247,7 @@ button,button::after {
 }
 
 #linkedin {
-  position: absolute;
-  left: 45%;
-  top: 56%;
+  display: inline-block;
   margin: 10px;
   padding: 0;
   transition: all 0.5s;
@@ -256,18 +259,14 @@ button,button::after {
 #linkedin:hover {
   margin: 10px;
   border: 2px solid rgba(255, 255, 255, 0.603);
-  top: 55%;
-  left: 44.7%;
   transition: all 0.4s;
   box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
   opacity: 100%;
 }
 
 #github {
-  position: absolute;
+  display: inline-block;
   height: 33px;
-  left: 52%;
-  top: 56%;
   margin: 8px;
   padding: 0;
   transition: all 0.5s;
@@ -278,7 +277,7 @@ button,button::after {
 
 #github:hover {
   height: 35px;
-  top: 55%;
+  top: 62%;
   border: 2px solid rgba(255, 255, 255, 0.603);
   transition: all 0.4s;
   box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
@@ -297,33 +296,38 @@ section > .img1 {
   background-color: black;
 }
 
-section > #img {
+section  {
+  position: relative;
   background: black url(../fotos/dev12.jpg) center center no-repeat fixed;
   height: 90vh; 
   background-size: cover;
   box-shadow: inset 10px 10px 15px 5px black;
 }
 
+#conteudos {
+  display: flex;
+  align-items: center;
+
+}
+
 #conteudo1 {
+  margin: auto;
   background-color: black;
-  position: absolute;
   height: 450px;
-  width: 350px;
-  left: 15%;
-  top: 90%;
+  width: 330px;
   color: white;
   text-align: center;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 #conteudo2 {
+  margin: auto;
   background-color: black;
-  position: absolute;
   height: 450px;
-  width: 350px;
-  left: 60%;
-  top: 90%;
+  width: 330px;
   color: white;
   text-align: center;
+  border: 1px solid rgb(81, 255, 0);
 }
 
 footer {
