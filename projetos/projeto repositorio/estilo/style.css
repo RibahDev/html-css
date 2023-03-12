@@ -201,43 +201,31 @@ button,button::after {
 
   main {
     position: relative;
-    height: 50vh;
+    height: 70vh;
     margin: auto;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 10px;
     background-color: #000000;
 }
 
 h2 {
-  text-align: center;
   color: white;
-  text-align: center;
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
-}
-
-.bloco-perf {
-  display: flex;
-  align-items: center;
 }
 
 #perf {
   position: absolute;
-  height: 50%;
-  left: 50%;
-  top: 33%;
-  transform: translate(-50%, -30%);
+  top: 15%;
   margin: auto;
   height: 150px;
   border-radius: 50%;
   transition: all 1s;
-  border: 3px ridge #ffffffe1;
+  border: 3px solid #1665dbe1;
   opacity: 70%;
 }
 
 #perf:hover {
-  height: 165px;
-  top: 31%;
-  left: 51%;
+  height: 160px;
   transition: all 0.7s;
   border-radius: 50%;
   border: 5px solid #ffffffea;
@@ -246,62 +234,55 @@ h2 {
 
 }
 
-#linkedin {
-  display: inline-block;
-  margin: 10px;
-  padding: 0;
-  transition: all 0.5s;
-  opacity: 50%;
-  border-radius: 20%;
-  box-sizing: border-box;
+main p {
+  position: absolute;
+  padding-left: 100px;
+  padding-right: 100px;
+  left: 100px;
+  color: white;
+  text-align: justify;
+  text-indent: 30px;
 }
 
-#linkedin:hover {
-  margin: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.603);
-  transition: all 0.4s;
-  box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
-  opacity: 100%;
+section#redes {
+  margin-top: 180px ;
 }
 
-#github {
-  display: inline-block;
-  height: 33px;
-  margin: 8px;
-  padding: 0;
-  transition: all 0.5s;
-  opacity: 50%;
-  border-radius: 50%;
-  box-sizing: border-box;
+section#redes img {
+    width: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.39);
+    transition: all 0.5s;
+    box-sizing: border-box;
+    opacity: 60%;
 }
 
-#github:hover {
-  height: 35px;
-  top: 62%;
-  border: 2px solid rgba(255, 255, 255, 0.603);
-  transition: all 0.4s;
-  box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.452);
+section#redes img:hover {
+  border: 2px solid rgba(255, 255, 255, 0.753);
+  transform: translate(5px, -5px);
+  transition: all 0.2s;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.589);
   opacity: 100%;
 }
 
 
-
-section h1{
+article h1{
     text-align: center;
     color: white;
     padding-top: 50px;
 }
 
-section > .img1 {
+article > .img1 {
   background-color: black;
 }
 
-section  {
+article  {
   position: relative;
   background: black url(../fotos/dev12.jpg) center center no-repeat fixed;
   height: 90vh; 
   background-size: cover;
-  box-shadow: inset 10px 10px 15px 5px black;
+  box-shadow: inset 0px 10px 15px 5px black;
 }
 
 #conteudos {
@@ -313,8 +294,8 @@ section  {
 #conteudo1 {
   margin: auto;
   background-color: black;
-  height: 450px;
-  width: 330px;
+  height: 400px;
+  width: 310px;
   color: white;
   text-align: center;
   border: 1px solid rgb(255, 0, 0);
@@ -323,8 +304,8 @@ section  {
 #conteudo2 {
   margin: auto;
   background-color: black;
-  height: 450px;
-  width: 330px;
+  height: 400px;
+  width: 310px;
   color: white;
   text-align: center;
   border: 1px solid rgb(81, 255, 0);
