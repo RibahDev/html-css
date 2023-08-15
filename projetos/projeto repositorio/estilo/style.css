@@ -35,8 +35,9 @@ header {
 
 /* Barra Nav */
 nav {
+    display: list-item;
     padding: 10px;
-    margin: auto;
+    margin: 0;
     background-color: #58005885;
     text-align: center;
     border-radius: 15px 15px 0px 0px ;
@@ -45,187 +46,63 @@ nav {
 
 
 /* Button Nav */
-button,button::after {
-    padding: 10px 50px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
-    background-color: transparent;
-    position: relative;
-  }
-  
-  #sobre::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: 'sobre';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-  }
-  #projetos::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: 'projetos';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-  }
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #222222;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
 
-  #certificados::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: 'certificado';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-  }
+button:hover {
+  background-color: #72057c;
+  box-shadow: 0px 15px 20px rgba(156, 23, 150, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
 
-  #trabalhos::after {
-    --move1: inset(50% 50% 50% 50%);
-    --move2: inset(31% 0 40% 0);
-    --move3: inset(39% 0 15% 0);
-    --move4: inset(45% 0 40% 0);
-    --move5: inset(45% 0 6% 0);
-    --move6: inset(14% 0 61% 0);
-    clip-path: var(--move1);
-    content: 'trabalho';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-  }
-  
-  button:hover::after {
-    animation: glitch_4011 1s;
-    text-shadow: 10 10px 10px black;
-    animation-timing-function: steps(2, end);
-    text-shadow: -3px -3px 0px #f21dcf, 3px 3px 0px #E94BE8;
-    background-color: transparent;
-    border: 3px solid rgb(48, 0, 58);
-  }
-  
-  button:hover {
-    text-shadow: -1px -1px 0px #f21dcf, 1px 1px 0px #E94BE8;
-  }
-  
-  button:hover {
-    background-color: transparent;
-    border: 1px solid rgb(126, 0, 158);
-    box-shadow: 0px 10px 10px -10px rgb(183, 0, 255);
-  }
-  
-  @keyframes glitch_4011 {
-    0% {
-      clip-path: var(--move1);
-      transform: translate(0px,-10px);
-    }
-  
-    10% {
-      clip-path: var(--move2);
-      transform: translate(-10px,10px);
-    }
-  
-    20% {
-      clip-path: var(--move3);
-      transform: translate(10px,0px);
-    }
-  
-    30% {
-      clip-path: var(--move4);
-      transform: translate(-10px,10px);
-    }
-  
-    40% {
-      clip-path: var(--move5);
-      transform: translate(10px,-10px);
-    }
-  
-    50% {
-      clip-path: var(--move6);
-      transform: translate(-10px,10px);
-    }
-  
-    60% {
-      clip-path: var(--move1);
-      transform: translate(10px,-10px);
-    }
-  
-    70% {
-      clip-path: var(--move3);
-      transform: translate(-10px,10px);
-    }
-  
-    80% {
-      clip-path: var(--move2);
-      transform: translate(10px,-10px);
-    }
-  
-    90% {
-      clip-path: var(--move4);
-      transform: translate(-10px,10px);
-    }
-  
-    100% {
-      clip-path: var(--move1);
-      transform: translate(0);
-    }
-  }
+button:active {
+  transform: translateY(-1px);
+}
+
 
   main {
     position: relative;
     height: 70vh;
-    margin: auto;
-    padding-left: 30px;
-    padding-top: 10px;
+    margin: 0;
     background-color: #000000;
 }
 
 h2 {
+  position: relative;
+  top: 230px;
+  text-align: center;
   color: white;
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
 }
 
 #perf {
   position: absolute;
-  top: 15%;
-  margin: auto;
-  height: 150px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 210px;
   border-radius: 50%;
   transition: all 1s;
-  border: 3px solid #1665dbe1;
-  opacity: 70%;
+  border: 3px solid #6e0085e1;
+  opacity: 80%;
 }
 
 #perf:hover {
-  height: 160px;
+  height: 215px;
   transition: all 0.7s;
   border-radius: 50%;
   border: 5px solid #ffffffea;
