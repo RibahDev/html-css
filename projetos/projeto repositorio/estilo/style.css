@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* variaveis */
 :root {
     --color1: #261a25;
     --color2: #bea8bf;
@@ -46,7 +46,7 @@ nav {
 
 
 /* Button Nav */
-button {
+.bnav {
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -62,7 +62,7 @@ button {
   outline: none;
 }
 
-button:hover {
+.bnav:hover {
   background-color: #72057c;
   box-shadow: 0px 15px 20px rgba(156, 23, 150, 0.4);
   color: #fff;
@@ -74,7 +74,7 @@ button:active {
 }
 
 
-  main {
+main {
     position: relative;
     height: 70vh;
     margin: 0;
@@ -89,27 +89,96 @@ h2 {
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
 }
 
-#perf {
+/* Card perfil */
+.card {
   position: absolute;
-  top: 10px;
+  --font-color: #fefefe;
+  --font-color-sub: #7e7e7e;
+  --bg-color: #111;
+  --main-color: #fefefe;
+  width: 250px;
+  height: 294px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   left: 50%;
-  transform: translateX(-50%);
-  height: 210px;
-  border-radius: 50%;
-  transition: all 1s;
-  border: 3px solid #6e0085e1;
-  opacity: 80%;
+  top: 40px;
+  transform: translate(-50%);
 }
 
-#perf:hover {
-  height: 215px;
-  transition: all 0.7s;
+.card-photo {
+  background-image:  url(../fotos/myself.jpg);
+  background-size: contain;
+  background-position: center;
+  transform: scale(0.3) translate(220px, 230px);
+  width: 280px;
+  height: 280px;
+  margin-left: -125px;
+  margin-top: -125px;
+  background-repeat: no-repeat;
   border-radius: 50%;
-  border: 5px solid #ffffffea;
-  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.37);
-  opacity: 100%;
+  border: 3px solid #adadad;
+}
+
+
+.card-title {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-title span {
+  font-size: 15px;
+  color: var(--font-color-sub);
+}
+
+.card-socials {
+  display: flex;
+  height: 0;
+  opacity: 0;
+  margin-top: 20px;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.card-socials-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-socials-btn svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--main-color);
+}
+
+.card:hover > .card-socials {
+  opacity: 1;
+  height: 35px;
+}
+
+.card-socials-btn:hover {
+  transform: translateY(-5px);
+  transition: all 0.15s;
+}
+
+.card-photo:hover {
+  transition: 0.3s;
+  transform: scale(0.4) translate(160px, 150px);
+  border: 5px #fff solid;
 
 }
+/* Fim do card */
 
 main p {
   position: absolute;
