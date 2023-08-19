@@ -88,6 +88,33 @@ h2 {
   text-shadow: 3px 3px 4px rgba(66, 66, 66, 0.76);
 }
 
+/* Botão p/ ativar languages */
+.botão {
+  position: relative;
+  --font-color: #fefefe;
+  --bg-color: #111;
+  --main-color: #fefefe;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  top: 100px;
+  left: 30%;
+}
+
+.botão:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+
+/* Biografia */
 .sobre {
   color: #fff;
   padding: 25px 10px 0  10px;
@@ -100,6 +127,13 @@ h2 {
   font-size: 1.3em;
 }
 
+.sobre > h1 {
+  color: var(--color4);
+  text-shadow: 3px 4px 5px rgba(77, 0, 77, 0.589);
+  margin: 0;
+  padding: 0;
+}
+
 /* Card perfil */
 .card {
   position: relative;
@@ -107,8 +141,8 @@ h2 {
   --font-color-sub: #7e7e7e;
   --bg-color: #111;
   --main-color: #fefefe;
-  width: 250px;
-  height: 300px;
+  width: 240px;
+  height: 320px;
   background: var(--bg-color);
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
@@ -250,22 +284,31 @@ article  {
 
 #conteudo1 {
   margin: auto;
-  background-color: black;
-  height: 400px;
-  width: 310px;
+  background-image: url(../fotos/android.png);
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 440px;
   color: white;
   text-align: center;
-  border: 1px solid rgb(255, 0, 0);
+  border: 2px solid rgba(153, 0, 255, 0.719);
+
 }
 
 #conteudo2 {
   margin: auto;
-  background-color: black;
-  height: 400px;
-  width: 310px;
+  background:url(../fotos/tatto.png);
+  opacity: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 440px;
   color: white;
   text-align: center;
-  border: 1px solid rgb(81, 255, 0);
+  border: 2px solid rgba(153, 0, 255, 0.719);
 }
 
 footer {
