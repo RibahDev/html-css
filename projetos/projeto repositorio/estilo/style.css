@@ -40,17 +40,18 @@ body {
 
 /* Barra Nav */
 nav {
+    position: relative;
     top: 1px;
     display: list-item;
     padding: 10px;
     margin: 0;
-    background-color: #5f155f8f;
+    background-color: #630063;
     box-shadow: inset 2px -10px 9px 3px rgba(0, 0, 0, 0.418);
 }
 
 
 /* Button Nav */
-.bnav {
+.bnav{
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -65,6 +66,7 @@ nav {
   cursor: pointer;
   outline: none;
   min-width: 125px;
+  text-decoration: none;
 }
 
 .bnav:hover {
@@ -74,9 +76,10 @@ nav {
   transform: translateY(-7px);
 }
 
-button:active {
-  transform: translateY(-1px);
+.bnav:active {
+  text-transform: translateY(-7px);
 }
+
 
 main {
   display: inline-block;
